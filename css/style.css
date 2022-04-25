@@ -1,0 +1,21 @@
+.form {
+  width: 800px;
+  border-radius: 20px;
+  box-shadow: -8px 7px 17px 3px rgba(34, 60, 80, 0.2);
+}
+.result {
+  border-radius: 20px;
+  box-shadow: -8px 7px 17px 3px rgba(34, 60, 80, 0.2);
+}
+.lists {
+  width: 800px;
+  height: 350px;
+}
+.list {
+  text-align: center;
+  width: 250px;
+  height: 100%;
+}
+.list ul {
+  height: 100%;
+}

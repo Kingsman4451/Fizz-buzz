@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FizzBuzz</title>
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="fizz-buzz">
+    <h1 class="text-center bg-primary text-white py-5 mb-5">
+      FizzBuzz
+    </h1>
+    <div class="container-lg container-fluid">
+      <div class="fizz-buzz__bottom d-flex flex-column justify-content-center align-items-center">
+        <form class="form bg-light p-5 mb-5" action="https://echo.htmlacademy.ru" method="post">
+            <input class="form-control mb-4" type="number" id="big-number" placeholder="Enter main number">
+            <div class="form-inputs d-flex">
+              <input class="form-control me-4" type="number" id="number1" placeholder="Enter first number">
+              <input class="form-control" type="number" id="number2" placeholder="Enter second number">
+            </div>
+            <button class="btn btn-primary fw-bold fs-5 mt-3 w-100">Submit</button>
+        </form>
+        <output class="result overflow-auto bg-light p-4 text-primary position-relative">
+          <div class="lists d-flex justify-content-around">
+            <div class="list border-end border-primary border-2">
+              <h3 class="opacity-75">Fizz</h3>
+              <ul class="fizz list-unstyled"></ul>
+            </div>
+            <div class="list">
+              <h3 class="opacity-75">FizzBuzz</h3>
+              <ul class="fizzbuzz list-unstyled"></ul>
+            </div>
+            <div class="list border-start border-primary border-2">
+              <h3 class="opacity-75">Buzz</h3>
+              <ul class="buzz h-100 list-unstyled"></ul>
+            </div>
+          </div>
+        </output>
+        <button class="clear btn btn-primary px-5 mt-4">Clear</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
