@@ -1,10 +1,12 @@
 let elForm = document.querySelector(".form");
 let elMainNumber = document.querySelector("#big-number");
-let elNumber1 = document.querySelector("#number1");
-let elNumber2 = document.querySelector("#number2");
+let elNumber1 = document.querySelector("#number-1");
+let elNumber2 = document.querySelector("#number-2");
+
 let listFizz = document.querySelector(".fizz");
 let listFizzBuzz = document.querySelector(".fizzbuzz");
 let listBuzz = document.querySelector(".buzz");
+
 let clearBtn = document.querySelector(".clear");
 
 
@@ -15,6 +17,10 @@ let buzz = [];
 
 elForm.addEventListener("submit", function(e){
   e.preventDefault();
+
+  listFizzBuzz.innerHTML = "";
+  listFizz.innerHTML = "";
+  listBuzz.innerHTML = "";
 
   let mainNumberValue = Number(elMainNumber.value);
   let firstNumberValue = Number(elNumber1.value);
